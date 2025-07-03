@@ -1,3 +1,73 @@
+# 📰 Next.js Article Management App
+
+Proyek ini adalah aplikasi manajemen artikel dengan role **User** dan **Admin**, dibangun menggunakan Next.js dan TailwindCSS. Aplikasi ini mendukung otentikasi, manajemen artikel, dan kategori, dengan fitur pencarian, filter, pagination, serta CRUD lengkap.
+
+---
+
+## 📌 Fitur Lengkap
+
+---
+
+## 1) User
+
+### a) Authentication
+- ✅ Login dengan validasi form.
+- ✅ Register dengan validasi form.
+- ✅ Setelah login/register sukses, redirect ke halaman list artikel.
+- ✅ Logout dengan redirect ke halaman login.
+
+### b) List artikel
+- ✅ Filter artikel berdasarkan kategori.
+- ✅ Searching artikel, dengan debounce (300-500ms).
+- ✅ Pagination jika data lebih dari 9 item.
+
+### c) Detail artikel
+- ✅ Tampilkan konten lengkap artikel.
+- ✅ Other articles, tampilkan maksimal 3 artikel dari kategori yang sama.
+
+---
+
+## 2) Admin
+
+### a) Authentication
+- ✅ Login dengan validasi form.
+- ✅ Register dengan validasi form.
+- ✅ Setelah login/register sukses, redirect ke halaman list artikel admin.
+- ✅ Logout dengan redirect ke halaman login.
+
+### b) List categories
+- ✅ Searching kategori dengan debounce (300-500ms).
+- ✅ Pagination jika data lebih dari 10 item.
+
+### c) Create category
+- ✅ Form tambah kategori dengan validasi form.
+
+### d) Edit category
+- ✅ Form edit kategori dengan validasi form.
+
+### e) List artikel
+- ✅ Filter artikel berdasarkan kategori.
+- ✅ Searching artikel dengan debounce (300-500ms).
+- ✅ Pagination jika data lebih dari 10 item.
+
+### f) Create article
+- ✅ Form tambah artikel dengan validasi form.
+- ✅ Tampilkan preview artikel sebelum submit (fetch API).
+
+### g) Edit article
+- ✅ Form edit artikel dengan validasi form.
+- ✅ Tampilkan preview artikel sebelum submit (fetch API).
+
+---
+
+## 🚀 Cara Menjalankan Proyek
+
+1. **Clone repo ini**
+   ```bash
+   git clone https://github.com/username/nama-repo.git
+   cd nama-repo
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
