@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const registerSchema = z.object({
   username: z.string().min(3, "Username minimal 3 karakter"),
   password: z.string().min(6, "Password minimal 6 karakter"),
-  role: z.enum(["User", "Admin"], "Role harus User atau Admin"),
+role: z.enum(["User", "Admin"]),
 });
 
 type RegisterForm = z.infer<typeof registerSchema>;
